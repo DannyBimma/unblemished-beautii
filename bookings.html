@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="hamburger.css">
+    <link rel="stylesheet" href="bookings.css" />
+
+    <title>Bookings</title>
+  </head>
+
+  <div class="menu-wrap">
+    <input type="checkbox" class="toggler" />
+    <div class="hamburger"><div></div></div>
+    <div class="menu">
+      <div>
+        <div>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="bookings.html">Bookings</a></li>
+            <li><a href="ed.html">Beautii Ed</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <body>
+    <div class="container">
+
+      <div class="logo-container">
+        <img src="/media/images/logo-rosegold-vector.png" height="100px" alt="">
+      </div>
+
+      <header>
+        <div class="header-text-box">
+          <h1>Book an appointment today and be ready to slay</h1>
+          <p class="header-text">
+            Fill out all fields in the form below for quick and easy appointment booking. Click submit and when your email app opens just make sure the info is correct, hit send, and await your appointment confirmation.   
+          </p>
+          <a class="btn btn--big" href="#">Submit</a>
+        </div>
+        <img src="/media/images/sq-selfie-4.jpg" alt="Photo" />
+      </header>
+
+      <section class="booking-container">
+        <form
+      action="mailto:dantrotman92@gmail.com"
+      method="POST"
+      enctype="multipart/form-data"
+      name="booking-form"
+      class="booking_form"
+    >
+      <label for="name">First & Last Name: *</label> <br />
+      <input type="text" id="name" name="client-name" />
+
+      <br />
+
+      <label for="email">Email Address: *</label> <br />
+      <input type="email" id="email" name="client-email" />
+
+      <br />
+
+      <label for="date">Preferred Date: *</label> <br />
+      <input
+        type="date"
+        id="date"
+        name="appointment-date"
+        min="2022-03-01"
+        max="2022-12-31"
+      />
+
+      <br />
+
+      <label for="service">Required Service:</label> <br />
+      <textarea
+        class="service_text_area"
+        name="client-service"
+        id="service"
+        cols="50"
+        rows="10"
+        placeholder="Let me know what service you would like to book an appointment for..."
+      ></textarea>
+
+      <br />
+
+      <!-- <button class="btn btn--small" type="submit">Submit</button> -->
+      <a class="btn btn--big" href="#">Submit</a>
+    </form>
+      </section>
+
+      <footer>
+        Copyright 2022 by Bimma Technologies &copy;.
+        Commissioned by Unblemished Beautii &copy;. 
+      </footer>
+    </div>
+  </body>
+</html>
