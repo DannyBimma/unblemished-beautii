@@ -24,7 +24,7 @@ body {
   border-bottom: 8px solid #c2255c;
 }
 
-.container {
+.main-container {
   width: 960px;
   margin: 0 auto;
 }
@@ -44,7 +44,7 @@ img {
   border-radius: 6px;
 }
 
-.grid-3-cols {
+.features-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 80px;
