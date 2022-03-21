@@ -174,7 +174,6 @@ img {
 }
 
 .testimonial-box {
-  /* 24 / 30 / 36 */
   font-size: 24px;
   grid-column: 2 / -1;
   align-self: center;
@@ -185,7 +184,6 @@ img {
 }
 
 .testimonial-text {
-  /* 16 / 18 / 20 */
   font-size: 18px;
   line-height: 27px;
   font-style: italic;
