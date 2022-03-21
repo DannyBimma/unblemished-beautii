@@ -8,16 +8,22 @@
 body{
   color: #495057;
   font-family: 'Smooch Sans', sans-serif;
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border-bottom: 8px solid #c2255c;
 }
 
 footer {
-    display: block;
+  display: block;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 960px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .container{
@@ -138,6 +144,10 @@ footer {
 }
 
 @media (max-width: 950px) {
+  .main-container {
+    width: 90%;
+  }
+
   .container{
     width: 90%;
     padding: 30px 40px 40px 35px ;
