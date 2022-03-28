@@ -20,7 +20,7 @@ FONT SIZE SYSTEM (px)
 /* ------------------------ */
 body {
   color: #495057;
-  font-family: 'Smooch Sans', sans-serif;
+  font-family: "Smooch Sans", sans-serif;
   border-bottom: 8px solid #c2255c;
 }
 
@@ -50,6 +50,12 @@ img {
   column-gap: 80px;
 }
 
+.features-grid-review {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 80px;
+}
+
 /* ------------------------ */
 /* COMPONENT STYLES */
 /* ------------------------ */
@@ -57,7 +63,7 @@ input[type="email"] {
   padding-left: 1rem;
   width: 60%;
   height: 25px;
-  border:#c2255c 0.5px solid;
+  border: #c2255c 0.5px solid;
   border-radius: 50px;
   outline: #e64980;
 }
@@ -99,7 +105,8 @@ img {
   width: 100%;
 }
 
-.btn:link, .btn:visited {
+.btn:link,
+.btn:visited {
   display: inline-block;
   background-color: #c2255c;
   color: #fff;
@@ -109,7 +116,8 @@ img {
   border-radius: 100px;
 }
 
-.btn:hover, .btn:visited {
+.btn:hover,
+.btn:visited {
   background-color: #e64980;
 }
 
@@ -307,4 +315,79 @@ footer {
   font-size: 1.5rem;
   background-color: #f5f5f5;
   border-radius: 6px;
+}
+
+@media only screen and (max-width: 930px) {
+  header {
+    grid-template-columns: 1fr;
+  }
+
+  h2 {
+    margin: 100px auto;
+    width: 50%;
+  }
+
+  blockquote {
+    margin: 100px auto;
+    width: 25%;
+  }
+
+  .header-img {
+    margin: 100px auto;
+    width: 50%;
+  }
+
+  .review-img {
+    margin: 100px auto;
+    width: 50%;
+  }
+
+  .testi-img {
+    margin: 100px auto;
+    width: 50%;
+  }
+
+  .header-text-box {
+    margin: 100px auto;
+    width: 50%;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    margin: 100px auto;
+    width: 50%;
+  }
+
+  .testimonial-heading {
+    margin: 0;
+  }
+
+  .features-grid-review {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+    column-gap: 0;
+  }
+
+  .testimonial-section {
+    /* display: grid;
+    grid-template-columns: 1fr; */
+    width: 50%;
+    margin: 100px auto;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* .features-grid-review {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    width: 40%;
+    margin: 100px auto;
+  }
+
+  .testimonial-section {
+    width: 40%;
+    margin: 100px auto;
+  } */
 }
